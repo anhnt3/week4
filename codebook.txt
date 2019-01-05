@@ -1,0 +1,8 @@
+subject: Identifies the subject who performed the activity. Its range is from 1 to 30
+labelname: The activity name. Its value:  WALKING WALKING_UPSTAIRS WALKING_DOWNSTAIRS SITTING STANDING LAYING
+label: The activity code. Its value: 1 to 6
+
+Variable column name with format : XX.ABC where:
+- XX: the column index in the original dataset
+- ABC: the name of the column from original dataset
+Variable column value contain mean for each subject and activity.
