@@ -19,9 +19,9 @@ load_data <- function(data_file_path, label_file_path, subject_file_path,labels_
     # read the features names
     features_names <- read.csv(features_name_filepath, sep = ' ', header = FALSE, col.names = c("no","name"))
     # standardize comname by removing special character and lower the character
-    colNames <- str_to_lower(str_replace_all(as.vector(features_names$name), "[()\\-,]",""))
+    #colNames <- str_to_lower(str_replace_all(as.vector(features_names$name), "[()\\-,]",""))
     # because some colname is duplicate so append index number to column name to make sure column name is unique
-    colNames <- paste(colNames,as.character(features_names$no),sep='')
+    colNames <- paste(as.character(features_names$no),as.vector(features_names$name),sep='.')
 
     # read data
     data <- fread(data_file_path, sep = ' ', header = FALSE, col.names = colNames)

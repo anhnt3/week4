@@ -1,4 +1,13 @@
 # week4  
+The data  come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+The script does following task:
+-Merges the training and the test sets to create one data set.
+-Extracts only the measurements on the mean and standard deviation for each measurement.
+-Uses descriptive activity names to name the activities in the data set
+-Appropriately labels the data set with descriptive variable names.
+-From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
 The R script use following library: dplyr, data.table, readr, stringr, so make sure you have installed those libraries beforehand.  
   
 Some variable names which configure the file path which is selft explained, you should change to match your enviroment  
